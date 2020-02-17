@@ -1,6 +1,6 @@
 # web-330
 Enterprise JavaScript II
 
-# Contributers
+# contributers
 Professor Krasso - Bellevue University 
 Jonathan Kobyluck - Bellevue University

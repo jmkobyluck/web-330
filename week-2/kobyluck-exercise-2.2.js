@@ -2,7 +2,7 @@
 ============================================
 ; Title:  Exercise 2.2
 ; Author: Professor Krasso
-; Date:   26 February 2020
+; Date:   28 February 2020
 ; Modified By: Jonathan Kobyluck
 ; Description: Prototypes
 ;===========================================
@@ -36,7 +36,7 @@ var person = {
     }
 };
 
-// 
+// creating the person object
 var jim = Object.create(person, {
     "age": {
         "value": "25"
@@ -46,6 +46,7 @@ var jim = Object.create(person, {
     }
 });
 
+// calling the getAge function on jim object
 jim.getAge(); 
 
 // console log output

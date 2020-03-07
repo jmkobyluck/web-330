@@ -1,8 +1,8 @@
 /*
-============================================
-; Title:  Exercise 3.2
+;============================================
+; Title: Exercise 3.2
 ; Author: Professor Krasso
-; Date:   6 March 2020
+; Date: 6 March 2020
 ; Modified By: Jonathan Kobyluck
 ; Description: The Factory Pattern
 ;===========================================

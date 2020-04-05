@@ -1,0 +1,80 @@
+<!-- /*
+============================================
+; Title: Exercise 7.3
+; Author: Professor Krasso
+; Date: 5 April 2020
+; Modified By: Jonathan Kobyluck
+; Description: The "foreach" Binding
+;===========================================
+*/  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Exercise 7.3</title>
+
+    <!-- Stylesheet - Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Libraries -->
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/5DACB2B0-5003-6543-8B39-D8EE6E4FC44C/main.js"
+      charset="UTF-8"
+    ></script>
+    <script src="../knockout-3.4.2.js"></script>
+  </head>
+  <body>
+
+    <div class="container" role="main">
+        <br/><br/>
+
+        <h2>Exercise 7.3 - The "foreach" Binding</h2>
+
+        <br/>
+
+        <table class="table table-dark table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Textbook Name</th>
+                    <th>New Price</th>
+                    <th>Used Price</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: books">
+                <tr>
+                    <td data-bind="text: name"></td>
+                    <td data-bind="text: newPrice"></td>
+                    <td data-bind="text: usedPrice"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+    </div>
+
+    <script>
+        function TextbookViewModel() {
+            this.books = ko.observableArray([
+                {name: "Learning JavaScript Design Patterns", newPrice: 44.99, usedPrice: 33.75},
+                {name: "NoSQL Distilled", newPrice: 44.99, usedPrice: 33.75},
+                {name: "Express in Action", newPrice: 39.99, usedPrice: 30.00},
+                {name: "RESTful Web APIs", newPrice: 44.99, usedPrice: 33.75},
+            ]);
+        }
+
+        ko.applyBindings(new TextbookViewModel);
+    </script>
+  </body>
+</html>
